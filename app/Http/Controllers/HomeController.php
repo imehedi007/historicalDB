@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use PDO;
 
 class HomeController extends Controller
 {
@@ -20,5 +21,15 @@ class HomeController extends Controller
     {
         // dd('Home');
         return view('frontend.pages.home');
+    }
+
+    public function contact()
+    {
+        return view('frontend.pages.contact');
+    }
+
+    public function about()
+    {
+        return view('frontend.pages.about');
     }
 }
